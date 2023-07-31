@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaghetti a delicacy</title>
+    <style>
+        *{
+            background-color: rgb(233, 180, 82);
+        }
+        .click, .eating, h1, h2, span, p, em, strong, a{
+            background-color: rgb(107, 71, 5);
+        }
+        .eating{
+            display: block;
+            padding: 30px;
+            margin: 30px auto;
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            transition: 2s;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 30px;
+        }
+        h2{
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        p{
+            line-height: 1.5;
+        }
+        a{
+            color: black;
+        }
+        button{
+            display: block;
+            margin: 30px auto;
+            padding: 15px 20px;
+            font-size: 40px;
+            border-radius: 30px;
+            border-color: black;
+            background: transparent;
+            background-image: linear-gradient(to right, rgb(29, 18, 1), rgb(235, 157, 14));
+        }
+        button:hover{
+            background-color: black;
+            color: rgb(233, 180, 82);
+        }
+
+        @media screen and (max-width:1024px) {
+            .eating {
+                width: var(--container-width-md);
+            }
+        
+        }
+        
+        @media screen and (max-width:600px) {
+            .eating {
+                width: var(--container-width-sm);
+            }
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="eating">
+      <h1>I love Eating</h1>
+      <h2>Espercially Spaghetti</h2>
+      <hr />
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/994/original/spaghetti.jpg?1688923500" alt="spaghetti" />
+      <hr />
+      <p>
+        <strong>Spaghetti</strong> is a type of pasta that takes its name from
+        the Italian word spaghetto, meaning "little cord". Spaghetti is <em>unique</em> unique amongst other pasta because it always <em>brings love</em> and <em>joy</em> when being eaten. Spaghetti can be eaten in various forms and with various sauces.
+      </p>
+      <span>
+        <a href="https://en.wikipedia.org/wiki/Spaghetti" target="_blank">Read more about Spaghetti</a>
+      </span>
+      <div class="click"><button>Try some Spaghetti</button></div>
+    </div>
+
+    <script>
+        function spaghetti(){
+            let name = prompt("What is your name?");
+            let question = prompt("Have you had Spaghetti today");
+            if (question === "yes"){
+               alert( name.toUpperCase() + " I hope you enjoyed it!");
+                   } else{
+                       if (question === "no"){
+                           alert( name.toUpperCase() + " you should try some Spaghetti today!")
+                       } else{
+                               alert("Try a correct input")
+                       }
+                   }
+        }
+        let joinButton = document.querySelector("button")
+        joinButton.addEventListener("click", spaghetti)
+    </script>
+
+  </body>
+
+</html>
