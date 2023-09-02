@@ -115,3 +115,37 @@ let forecast = [
 console.log(forecast);
 
 // JS Arrays VS Objects
+
+let cities = [
+  {
+    name: "Sydney",
+    country: "Australia",
+    language: "English",
+    temperature: 15,
+    capitalCity: true
+  },
+  {
+    name: "Brisbane",
+    country: "Australia",
+    language: "English",
+    temperature: 15,
+    capitalCity: true
+  },
+  {
+    name: "Carrabay",
+    country: "Australia",
+    language: "English",
+    temperature: 15,
+    capitalCity: true
+  }
+];
+
+console.log(cities[0].name);
+console.log(cities[0].temperature);
+
+console.log(cities[1].name);
+console.log(cities[1].temperature);
+
+console.log(cities[2].name);
+console.log(cities[2].temperature);
+
