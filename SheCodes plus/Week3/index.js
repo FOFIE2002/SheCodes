@@ -81,3 +81,37 @@ for (let i = 0; i < weekDays.length; i++) {
 
 // JS Objects
 
+let weather = { temp: "20deg", humidity: 2, windSpeed: "3.0m/s" };
+console.log(weather);
+console.log(weather.humidity);
+console.log(weather.temp);
+console.log(weather.windSpeed);
+console.log(weather["humidity"]);
+console.log(weather["temp"]);
+console.log(weather["windSpeed"]);
+
+let forecast = [
+  {
+    day: "Monday",
+    temp: 25
+  },
+  {
+    day: "Tuesday",
+    temp: 26
+  },
+  {
+    day: "Wednesday",
+    temp: 30
+  },
+  {
+    day: "Thursday",
+    temp: 14
+  },
+  {
+    day: "Friday",
+    temp: 22
+  }
+];
+console.log(forecast);
+
+// JS Arrays VS Objects
