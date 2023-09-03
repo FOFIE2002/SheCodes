@@ -149,3 +149,12 @@ console.log(cities[1].temperature);
 console.log(cities[2].name);
 console.log(cities[2].temperature);
 
+
+
+// let name = prompt("what is your name?");
+// if (name !== null && name.trim() !== "") {
+//     alert("Welcome " + name)
+//   }
+//     else{
+//     alert("Too Bad for You")
+// }
