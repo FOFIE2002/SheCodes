@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>She Codes Plus</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/97d93363c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
   </head>
-
   <body>
-    <img src="images/logo.png" alt="She Codes Plus Logo" class="logo" />
-    <h1>Bootstrap</h1>
+    <div class="container row">
+      <header>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="s colubmit">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+        </div>
+      </header>
 
-    <h3>Challenge 1</h3>
-    <p>
-      Import the latest version of Boostrap CSS to this page <br />
-      👉 <a href="https://getbootstrap.com/" target="_blank"> Bootstrap </a>
-    </p>
-    <h3>Challenge 2</h3>
-    <p>
-      Move the following list into a layout of 4 columns <br />
-      👉
-      <a href="https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank">
-        Bootstrap
-      </a>
-    </p>
+      <section class="col-9">
+        <div class="date">
+          <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></i>
+          <h1>BUEA</h1>
+          <h2>AUGUST 01</h2>
+          <h3>17:00</h3>
+          <p>CLOUDY</p>
+        </div>
+      </section>
 
-    <div class="row">
-      <div class="col">Today</div>
-      <div class="col">Tomorrow</div>
-      <div class="col">Weekend</div>
-      <div class="col">Next week</div>
+      <section class="col">
+        <div class="date">
+          <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+          <p>PRESSURE: 1021hPA <br> SUNRISE: 6:38 <br> SUNSET: 18:03</p>
+          <h1>+20°C</h1>
+        </div>
+      </section>
+
+      <section>
+        <div class="row row-cols-7 row-cols-lg-7 g-4 g-lg-5 week-days">
+          <div class="mon col">
+            <p>mon</p>
+            <i class="fa-solid fa-sun" style="color: #fad905"></i> <br>
+            <span>23°C <br> 20°C</span>
+          </div>
+          <div class="tue col">
+            <p>tue</p>
+            <i class="fa-solid fa-cloud-bolt" style="color: #ffc905"></i> <br>
+            <span>23°C <br> 20°C</span>
+          </div>
+          <div class="wed col">
+            <p>wed</p>
+            <i class="fa-solid fa-cloud-bolt"></i> <br>
+            <span>23°C <br> 20°C</span>
+          </div>
+          <div class="thu col">
+            <p>thu</p>
+            <i class="fa-solid fa-cloud" style="color: #37d2e6"></i> <br>
+            <span>23°C <br> 20°C</span>
+          </div>
+          <div class="fri col">
+            <p>fri</p>
+            <i class="fa-solid fa-sun" style="color: #fad905"></i> <br>
+            <span>23°C <br> 20°C</span>
+          </div>
+          <div class="sat col">
+            <p>sat</p>
+            <i class="fa-solid fa-cloud-bolt"></i> <br>
+            <span>23°C <br> 20°C</span>
+          </div>
+          <div class="sun col">
+            <p>sun</p>
+            <i class="fa-solid fa-cloud" style="color: #37d2e6"></i> <br>
+            <span>23°C <br> 20°C</span>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <h3>Challenge 3</h3>
-    <p>Add a bootstrap red button here</p>
-    👉
-    <a href="https://getbootstrap.com/docs/4.3/components/buttons/">Buttons</a>
-    <br/>
-<button type="button" class="btn btn-danger">Danger</button>
-    <h3>Challenge 4</h3>
-    <p>
-      Display 3 cards in a a grid of 3 columns <br />
-      👉
-      <a
-        href="https://getbootstrap.com/docs/4.3/components/card/"
-        target="_blank"
-      >
-        Cards
-      </a>
-      <br/>
-      <div class="row">
-      
-<div class="card col" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card col" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div><div class="card col" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </p>
     <script src="script.js"></script>
-
   </body>
 </html>
