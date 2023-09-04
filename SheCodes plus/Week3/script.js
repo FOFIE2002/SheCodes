@@ -24,6 +24,7 @@ let weather = {
   // write your code here
     let cityName = prompt("Enter your city name")
     cityName = cityName.trim();
+    cityName = cityName.toLowerCase();
 
     if (weather.hasOwnProperty(cityName)){
         let cityData = weather[cityName];
