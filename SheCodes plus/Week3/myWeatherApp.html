@@ -16,12 +16,12 @@
       <header>
         <div class="search-container">
           <input type="text" placeholder="Search..." />
-          <button type="s colubmit">
+          <button type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>Search
           </button>
         </div>
       </header>
-
+<!-- <div class="row row-cols-2 row-cols-lg-2 g-9 g-lg-5"> -->
       <section class="col-9">
         <div class="date">
           <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></i>
@@ -39,7 +39,7 @@
           <h1>+20°C</h1>
         </div>
       </section>
-
+    <!-- </div> -->
       <section>
         <div class="row row-cols-7 row-cols-lg-7 g-4 g-lg-5 week-days">
           <div class="mon col">
@@ -49,7 +49,7 @@
           </div>
           <div class="tue col">
             <p>tue</p>
-            <i class="fa-solid fa-cloud-bolt" style="color: #ffc905"></i> <br>
+            <i class="fa-solid fa-cloud-bolt" "></i> <br>
             <span>23°C <br> 20°C</span>
           </div>
           <div class="wed col">
@@ -59,7 +59,7 @@
           </div>
           <div class="thu col">
             <p>thu</p>
-            <i class="fa-solid fa-cloud" style="color: #37d2e6"></i> <br>
+            <i class="fa-solid fa-cloud" "></i> <br>
             <span>23°C <br> 20°C</span>
           </div>
           <div class="fri col">
@@ -74,13 +74,24 @@
           </div>
           <div class="sun col">
             <p>sun</p>
-            <i class="fa-solid fa-cloud" style="color: #37d2e6"></i> <br>
+            <i class="fa-solid fa-cloud" "></i> <br>
             <span>23°C <br> 20°C</span>
           </div>
         </div>
       </section>
     </div>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      function isWindy(speed){
+        if (speed > 5){
+          alert("It is windy");
+        }
+        else {
+          alert("It is not windy")
+        }
+      }
+      isWindy(7);
+    </script>
   </body>
 </html>
