@@ -44,6 +44,11 @@ section{
     text-transform: uppercase;
     padding: 20px 20px;
 }
+.week-days .col:hover{
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+}
 .week-days .col p{
     font-weight: 700;
     font-size: 25px;
