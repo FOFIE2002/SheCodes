@@ -37,4 +37,5 @@ function isWindy(speed) {
   console.log(isWindy(2, 'imperial'));
   console.log(isWindy(20, 'metric'));
 
-  
+  let now = new Date();
+  console.log(now)
